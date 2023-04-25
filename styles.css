@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      padding-bottom: 49px;
+}
+
+
+.gradient-background,
+.black-background,
+.blend-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.gradient-background {
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+height: 200px;
+    width: 48%;
+  display: inline-block;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 100px rgba(20, 255, 233, 0.5);
+  animation: color-change 2s linear infinite;
+}
+
+.black-background {
+  background-color: #000;
+    height: 160px;
+    width: 45%;
+  display: inline-block;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.blend-text {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blend-text p {
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  margin: 0px 20px;
+  animation: color-change 2s linear infinite;
+}
+
+@keyframes color-change {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.date {
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: color-change 2s linear infinite;
+  font-weight: bold;
+}
+
+/* For screens up to 1440px */
+
+@media (max-width: 1440px) {
+  .gradient-background {
+    height: 200px;
+    width: 65%;
+  }
+  
+  .black-background {
+    height: 160px;
+    width: 60%;
+  }
+  
+  .blend-text p {
+    font-size: 5rem;
+  }
+  
+  .date {
+    font-size: 2rem;
+  }
+}
+
+
+/* For screens up to 1100px */
+@media (max-width: 1100px) {
+  .gradient-background {
+    width: 50%;
+  }
+
+  .black-background {
+    width: 45%;
+  }
+}
+
+/* For screens up to 991px */
+@media (max-width: 991px) {
+  .gradient-background {
+    height: 150px;
+    width: 60%;
+  }
+  
+  .black-background {
+    height: 120px;
+    width: 55%;
+  }
+  
+  .blend-text p {
+    font-size: 4rem;
+  }
+  
+  .date {
+    font-size: 1.5rem;
+  }
+}
+
+/* For screens up to 1080px */
+@media (max-width: 1080px) {
+  .gradient-background {
+    height: 140px;
+    width: 65%;
+  }
+  
+  .black-background {
+    height: 110px;
+    width: 60%;
+  }
+  
+  .blend-text p {
+    font-size: 4rem;
+  }
+  
+  .date {
+    font-size: 1.5rem;
+  }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .gradient-background {
+    height: 120px;
+    width: 80%;
+  }
+  
+  .black-background {
+    height: 100px;
+    width: 75%;
+  }
+  
+  .blend-text p {
+    font-size: 3rem;
+  }
+  
+  .date {
+    font-size: 1.3rem;
+  }
+}
+
+/* For screens up to 650px */
+@media (max-width: 650px) {
+  .gradient-background {
+    height: 100px;
+    width: 70%;
+  }
+  
+  .black-background {
+    height: 80px;
+    width: 65%;
+  }
+  
+  .blend-text p {
+    font-size: 2.5rem;
+  }
+  
+  .date {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .gradient-background {
+    width: 60%;
+  }
+  
+  .black-background {
+    width: 55%;
+  }
+  
+  .blend-text p {
+    font-size: 2rem;
+    margin: 0px 15px;
+  }
+  
+  .date {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .wrapper {
+    height: 100px;
+  }
+  
+  .gradient-background {
+    width: 90%;
+  }
+  
+  .black-background {
+    width: 84%;
+  }
+  
+  .blend-text p {
+    font-size: 2.5rem;
+  }
+  
+  .date {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .wrapper {
+    height: 80px;
+  }
+  
+  .gradient-background {
+    width: 90%;
+  }
+  
+  .black-background {
+    width: 84%;
+  }
+  
+  .blend-text p {
+    font-size: 1.8rem;
+    margin: 0px 10px;
+  }
+  
+  .date {
+    font-size: 0.8rem;
+  }
+}
